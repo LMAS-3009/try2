@@ -22,9 +22,7 @@ jobs:
         run: netlify login
         env:
           NETLIFY_AUTH_TOKEN:  ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      - name: Initlize Netlify
-        run: |
-          netlify link 
-          await page.keyboard.press('Enter');
+      - name: Set selected color
+        run: echo '::set-env name=SELECTED_COLOR::green'
         
       
