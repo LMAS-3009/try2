@@ -24,6 +24,6 @@ jobs:
           NETLIFY_AUTH_TOKEN:  ${{ secrets.NETLIFY_AUTH_TOKEN }}
       - name: Initlize Netlify
         run: |
-          netlify link
+          netlify link await page.keyboard.press('Enter');
         
       
