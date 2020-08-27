@@ -24,8 +24,6 @@ jobs:
           NETLIFY_AUTH_TOKEN:  ${{ secrets.NETLIFY_AUTH_TOKEN }}
       - name: Initlize Netlify
         run: |
-          netlify deploy --auth $NETLIFY_AUTH_TOKEN --dir=dit
-          echo 'y'
-          echo 'dit'
+          netlify link
         
       
