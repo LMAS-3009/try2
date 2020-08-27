@@ -23,6 +23,5 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN:  ${{ secrets.NETLIFY_AUTH_TOKEN }}
       - name: Initlize Netlify
-        run: |
-          netlify deploy --open
+        run: netlify deploy --auth  NETLIFY_AUTH_TOKEN
       
