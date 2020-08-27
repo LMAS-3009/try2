@@ -24,7 +24,5 @@ jobs:
           NETLIFY_AUTH_TOKEN:  ${{ secrets.NETLIFY_AUTH_TOKEN }}
       - name: Initlize Netlify
         run: |
-          netlify init
-          netlify build
           netlify deploy --open
       
