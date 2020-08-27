@@ -16,3 +16,7 @@ jobs:
         uses: actions/setup-node@v1.4.3
       - name: Node js version
         run: node -v
+      - name: Install Netlify CLI
+        run: npm install netlify-cli -g
+      - name: Netlify Login
+        run: netlify login
