@@ -23,6 +23,6 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN:  ${{ secrets.NETLIFY_AUTH_TOKEN }}
       - name: Netlify Build
-        run: netlify link echo 'enter'
+        run: netlify deploy --dir=$dit
         
       
